@@ -1,0 +1,262 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.header__titulo {
+  font-style: italic;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+/*HOVER*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+/*FOOTER DE INDEX*/
+.footer__Principal {
+  background-image: url(../img/sky1.jpg);
+}
+
+.footer__Principal ul {
+  padding: 10px 50px;
+  width: 100%;
+  font-size: smaller;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+/*FOOTER DEL RESTO DEL SITIO*/
+.footer__Enlaces {
+  padding: 10px 50px;
+}
+
+.footer__Enlaces ul {
+  width: 100%;
+  font-size: smaller;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+  /*Fuente Benne*/
+  color: white;
+  background-color: #727272;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #212529), to(#ebebeb));
+  background: linear-gradient(to bottom, #212529 10%, #ebebeb 100%);
+}
+
+/* Transiciones */
+.trans {
+  -webkit-transition: all;
+  transition: all;
+}
+
+.trans:hover {
+  border: 3px solid white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4b4b4b), to(#929292));
+  background-image: linear-gradient(to bottom, #4b4b4b 0%, #929292 100%);
+}
+
+/* Transformaciones */
+.escalar {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  margin: 20px;
+}
+
+/*DISTRIBUCIÓN CON GRID - TUVE QUE HACER UN SECTION YA QUE EN EL ARTICLE NO ANDABA*/
+/* Desktop */
+main {
+  margin: 35px;
+}
+
+main section {
+  padding: 10px;
+}
+
+main aside {
+  padding: 0px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: lateral;
+  border: 1px solid white;
+  background-color: #929292;
+}
+
+.gridMain {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "destacados lateral" "ultimos none";
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+  -ms-grid-rows: 6fr 6fr;
+      grid-template-rows: 6fr 6fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  height: 90vh;
+}
+
+.articleDestacados {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: destacados;
+  border: 1px solid white;
+  background-color: #929292;
+}
+
+.articleUltimos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ultimos;
+  border: 1px solid white;
+  background-color: #929292;
+}
+
+.gradiente {
+  background-color: #727272;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #000000), to(#ebebeb));
+  background: linear-gradient(to bottom, #000000 10%, #ebebeb 100%);
+}
+
+/* RESPONSIVE */
+/* Smartphone */
+@media (max-width: 599px) {
+  header div {
+    display: none;
+  }
+  .gridHeader {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "lista";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .listaHeader {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: lista;
+  }
+  aside {
+    display: none;
+  }
+}
+
+/*Imagen de fondo para sección Poetas*/
+.fondo__Poetas {
+  background-image: url(../img/coffee-6249312_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 0px;
+}
+
+/*Imagen de fondo para sección Poemas*/
+.fondo__Poemas {
+  background-image: url(../img/Ateneo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 0px;
+}
+
+/*Imagen de fondo para sección Recursos*/
+.fondo__Recursos {
+  background-image: url(../img/liberiax.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  height: 80vh;
+}
+
+.boton__listaPoemas {
+  background-color: #777777;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: default;
+}
+
+/*Formulario de registro e inicio de sesión*/
+#fondoform {
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 20px;
+  height: 80vh;
+}
+
+#fondoform input[type=text], select {
+  padding: 12px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#fondoform input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#fondoform input[type=submit]:hover {
+  background-color: #45a049;
+}
+/*# sourceMappingURL=prueba.css.map */
