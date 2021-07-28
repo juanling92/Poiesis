@@ -7,14 +7,11 @@
   font-style: italic;
   font-size: 50px;
   margin-left: 50px; }
-
-/*HOVER*/
-a {
-  text-decoration: none;
-  color: white; }
-
-a:hover {
-  font-weight: 700; }
+  .header__titulo a {
+    text-decoration: none;
+    color: white; }
+    .header__titulo a a:hover {
+      font-weight: 700; }
 
 /*FOOTER DE INDEX*/
 .footer__Principal {
@@ -47,6 +44,10 @@ ol {
 ul {
   list-style-type: none; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -74,25 +75,30 @@ html {
 
 /*DISTRIBUCIÓN CON GRID - TUVE QUE HACER UN SECTION YA QUE EN EL ARTICLE NO ANDABA*/
 /* Desktop */
-main {
-  margin: 35px; }
-  main section {
-    padding: 10px; }
-  main aside {
-    padding: 0px;
-    grid-area: lateral;
-    border: 1px solid white;
-    background-color: #929292; }
-
-.gridMain {
-  display: grid;
-  grid-template-areas: "destacados lateral" "ultimos none";
-  grid-template-columns: 4fr 2fr;
-  grid-template-rows: 6fr 6fr;
-  grid-column-gap: 40px;
-  grid-row-gap: 30px;
-  height: 90vh; }
-
+/*main {
+        margin: 35px;
+            section {
+                padding: 10px;
+            }
+            aside {
+                padding: 0px;
+                grid-area: lateral;
+                border: 1px solid white;
+                background-color: rgb(146, 146, 146);
+            }
+    }*/
+/*.gridMain {
+        display: grid;
+        grid-template-areas: 
+        "destacados lateral" 
+        "ultimos none" 
+        ;
+        grid-template-columns: 4fr 2fr;
+        grid-template-rows: 6fr 6fr;
+        grid-column-gap: 40px;
+        grid-row-gap:30px; 
+        height: 120vh; 
+    }*/
 .articleDestacados {
   grid-area: destacados;
   border: 1px solid white;
@@ -118,8 +124,9 @@ main {
     justify-content: center; }
   .listaHeader {
     grid-area: lista; }
-  aside {
-    display: none; } }
+  /*aside {
+        display: none;
+    }*/ }
 
 /*Imagen de fondo para sección Poetas*/
 .fondo__Poetas {

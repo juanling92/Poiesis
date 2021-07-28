@@ -1,5 +1,6 @@
 @import "_header.scss";
 @import "_footer.scss";
+@import "_generico.scss";
 
 *{margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@ html {
 }
 /*DISTRIBUCIÓN CON GRID - TUVE QUE HACER UN SECTION YA QUE EN EL ARTICLE NO ANDABA*/ 
 /* Desktop */
-    main {
+    /*main {
         margin: 35px;
             section {
                 padding: 10px;
@@ -37,19 +38,20 @@ html {
                 border: 1px solid white;
                 background-color: rgb(146, 146, 146);
             }
-    }
-    .gridMain {
+    }*/
+    
+    /*.gridMain {
         display: grid;
         grid-template-areas: 
-        "destacados lateral" /* 1er fila */
-        "ultimos none" /* 2da fila */
+        "destacados lateral" 
+        "ultimos none" 
         ;
         grid-template-columns: 4fr 2fr;
         grid-template-rows: 6fr 6fr;
         grid-column-gap: 40px;
         grid-row-gap:30px; 
-        height: 90vh; 
-    }
+        height: 120vh; 
+    }*/
     .articleDestacados {
         grid-area: destacados;
         border: 1px solid white;
@@ -79,9 +81,9 @@ html {
     .listaHeader {
         grid-area: lista;
     }
-    aside {
+    /*aside {
         display: none;
-    }
+    }*/
 }
 /*Imagen de fondo para sección Poetas*/
 .fondo__Poetas {
