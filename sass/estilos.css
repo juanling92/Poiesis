@@ -25,6 +25,8 @@
     justify-content: space-between;
     align-items: center;
     height: 50px; }
+    .footer__Principal ul a {
+      color: black; }
 
 /*FOOTER DEL RESTO DEL SITIO*/
 .footer__Enlaces {
@@ -48,6 +50,13 @@ a {
   text-decoration: none;
   color: white; }
 
+body {
+  min-height: 100%;
+  height: 100%; }
+
+aside {
+  display: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -55,78 +64,9 @@ a {
 
 html {
   font-family: url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
-  /*Fuente Benne*/
   color: white;
   background-color: #727272;
   background: linear-gradient(to bottom, #212529 10%, #ebebeb 100%); }
-
-/* Transiciones */
-.trans {
-  transition: all; }
-
-.trans:hover {
-  border: 3px solid white;
-  background-image: linear-gradient(to bottom, #4b4b4b 0%, #929292 100%); }
-
-/* Transformaciones */
-.escalar {
-  transform: scale(1, 1);
-  margin: 20px; }
-
-/*DISTRIBUCIÓN CON GRID - TUVE QUE HACER UN SECTION YA QUE EN EL ARTICLE NO ANDABA*/
-/* Desktop */
-/*main {
-        margin: 35px;
-            section {
-                padding: 10px;
-            }
-            aside {
-                padding: 0px;
-                grid-area: lateral;
-                border: 1px solid white;
-                background-color: rgb(146, 146, 146);
-            }
-    }*/
-/*.gridMain {
-        display: grid;
-        grid-template-areas: 
-        "destacados lateral" 
-        "ultimos none" 
-        ;
-        grid-template-columns: 4fr 2fr;
-        grid-template-rows: 6fr 6fr;
-        grid-column-gap: 40px;
-        grid-row-gap:30px; 
-        height: 120vh; 
-    }*/
-.articleDestacados {
-  grid-area: destacados;
-  border: 1px solid white;
-  background-color: #929292; }
-
-.articleUltimos {
-  grid-area: ultimos;
-  border: 1px solid white;
-  background-color: #929292; }
-
-.gradiente {
-  background-color: #727272;
-  background: linear-gradient(to bottom, #000000 10%, #ebebeb 100%); }
-
-/* RESPONSIVE */
-/* Smartphone */
-@media (max-width: 599px) {
-  header div {
-    display: none; }
-  .gridHeader {
-    display: grid;
-    grid-template-areas: "lista";
-    justify-content: center; }
-  .listaHeader {
-    grid-area: lista; }
-  /*aside {
-        display: none;
-    }*/ }
 
 /*Imagen de fondo para sección Poetas*/
 .fondo__Poetas {
