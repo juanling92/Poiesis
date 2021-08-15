@@ -1,38 +1,35 @@
 /*FOOTER DE INDEX*/
 .footer__Principal {
-    
-    background-image: url(../img/sky1.jpg);
         ul{
+            background-color:rgba(165, 165, 165, 0.507);
             padding: 10px 50px;
             width: 100%;
-            font-size: smaller;
-            list-style: none;
+            font-size: small;
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 50px;
                 a {
-                    color: black;
+                    color: #212529;
                 }
     }
 }
 
 /*FOOTER DEL RESTO DEL SITIO*/
 .footer__Enlaces {
-    padding: 10px 50px;
-        ul {
-    width: 100%;
-    font-size: smaller;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    }
+    ul{
+        background-color:rgba(165, 165, 165, 0.507);
+        padding: 10px 50px;
+        width: 100%;
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        bottom: 0;
+            a {
+                color: #212529;
+            }
 }
-ol {
-    list-style-type: none;
 }
-ul {
-    list-style-type: none;
-}
+

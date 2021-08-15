@@ -6,3 +6,21 @@ body {
 aside {
     display: none;
 }
+@media (min-width: 750px) {
+aside {
+    display: flex;
+}
+.listaPoemas {
+    width: 20%;
+}
+.listaPoetas {
+    width: 20%;
+}
+.fondo__Poemas
+{
+    height: 85vh;
+}
+#fondoform {
+    height: 85vh;
+}
+}

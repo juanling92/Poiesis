@@ -7,40 +7,68 @@
     padding: 0;
     box-sizing: border-box;
 }
-html { 
-    font-family: url('https://fonts.googleapis.com/css2?family=Benne&display=swap'); //Fuente Benne//
-    color: white;
-    background-color: rgb(114, 114, 114);
-    background: linear-gradient(to bottom,#212529 10%, #ebebeb 100%);
+.listaPoemas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    li {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #212529;
+        text-decoration: none;
+        background-color: rgba(119, 119, 119, 0.774);
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+}
+.listaPoetas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    li {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #212529;
+        text-decoration: none;
+        background-color: none;
+        border: none;
+    }
 }
 
 /*Imagen de fondo para sección Poetas*/
 .fondo__Poetas {
+    border-radius: 6px;
     background-image: url(../img/coffee-6249312_1920.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 50px;
-    margin: 0px;
 }
 /*Imagen de fondo para sección Poemas*/
 .fondo__Poemas {
+    border-radius: 6px;
     background-image: url(../img/Ateneo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 50px;
-    margin: 0px;
 }
 /*Imagen de fondo para sección Recursos*/
 .fondo__Recursos {
+    border-radius: 6px;
     background-image: url(../img/liberiax.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 50px;
-    height: 80vh;
+    height: 85vh;
 }
+
 .boton__listaPoemas {
     background-color: rgb(119, 119, 119);
     border: none;
@@ -56,14 +84,14 @@ html {
 }
 /*Formulario de registro e inicio de sesión*/
 #fondoform {
-    border-radius: 5px;
+    border-radius: 6px;
     background-color:lightgray;
-    padding: 20px;
-    height: 80vh;
+    text-align: center;
+    padding: 80px 0;
 }
 #fondoform input[type=text], select {
     padding: 12px 20px;
-    margin: 2px 0;
+    margin: 4px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
